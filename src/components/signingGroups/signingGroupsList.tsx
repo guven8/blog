@@ -68,12 +68,7 @@ export const SigningGroupList: React.FC<IResourceComponentsProps> = () => {
     getHeaderGroups,
     getRowModel,
     setOptions,
-    refineCore: {
-      setCurrent,
-      pageCount,
-      current,
-      tableQueryResult: { data: tableData }
-    }
+    refineCore: { setCurrent, pageCount, current }
   } = useTable({
     columns
   });

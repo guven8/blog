@@ -11,14 +11,11 @@ import { useForm } from '@refinedev/react-hook-form';
 
 export const SigningGroupEdit: React.FC<IResourceComponentsProps> = () => {
   const {
-    refineCore: { formLoading, queryResult },
+    refineCore: { formLoading },
     saveButtonProps,
     register,
-    setValue,
     formState: { errors }
   } = useForm();
-
-  const signingGroupsData = queryResult?.data?.data;
 
   return (
     <Edit isLoading={formLoading} saveButtonProps={saveButtonProps}>
